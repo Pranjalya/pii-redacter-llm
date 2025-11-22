@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+presidio-analyzer
+presidio-anonymizer
+transformers
+torch --index-url https://download.pytorch.org/whl/cpu
+onnxruntime
+spacy
+httpx
+diskcache
+Faker
+langchain
+langchain-openai
+langchain-community
+python-dotenv
