@@ -29,7 +29,8 @@ class PIIVault:
         """
         self.analyzer = AnalyzerEngine()
         self.anonymizer = AnonymizerEngine()
-        self.fake = Faker()
+        # Use 'en_IN' for Indian names
+        self.fake = Faker(['en_IN', 'en_US'])
         
         # Initialize DiskCache
         self.vault_storage = diskcache.Cache(cache_dir, size_limit=1024 * 1024 * 100) # 100MB limit
